@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #a09292;
+    --secondary-color: #f4f4f4;
+    --dark-color: #333;
+    --light-color: #fff;
+    --container-normal: 1100px;
+    --container-lg: 1400px;
+    --container-sm: 900px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 50%;
+}
+
+/* Utility Classes */
+.text-primary {
+    background-color: var(--primary-color);
+}
+
+/* Container */
+.container {
+    max-width: var(--container-normal);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.container-lg {
+    max-width: var(--container-lg);
+
+}
+
+.container-sm {
+    max-width: var(--container-sm);
+}
+
+/* Header */
+
+
+.header {
+    margin: 1rem auto;
+}
+
+.header .logo{
+    width: 100px;
+
+}
+
+.header .header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.header .main-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.header .main-menu a {
+    padding: 0.5rem 1rem;
+}
+
+.header .main-menu a:hover {
+    background-color:var(--primary-color);
+}
+
+.current {
+    background-color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Hero */
+.hero {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    line-height: 1.4;
+    font-weight: normal;
+
+}
+
+.gallery-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.333% - 1.5rem);
+    max-width: calc(33.333% - 1.5rem);
+    position: relative;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header .header-flex {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .gallery-item {
+        flex: 1 1 calc(50% - 1.5rem);
+        max-width: calc(50% - 1.5rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        flex: 1 1 100%; 
+        max-width: 100%;
+    }
+}
