@@ -39,6 +39,12 @@ img {
     background-color: var(--primary-color);
 }
 
+.section-heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
 /* Container */
 .container {
     max-width: var(--container-normal);
@@ -130,9 +136,89 @@ img {
     position: relative;
 }
 
+.gallery-item:hover {
+    opacity: 0.9;
+}
+
+/* Footer */
+.footer {
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem 1.5rem;
+    margin-top: 2rem;
+}
+
+.footer .footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer img {
+    height: 70px;
+    width: 70px;
+}
+
+.footer a {
+    margin: 0 0.5rem;
+}
+
+
+
+
+
+.footer h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Services */
+.services {
+    background: #333;
+    color:#fff;
+    padding: 3rem;
+}
+
+.services-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.service-item h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.team {
+    padding: 3rem 0 4rem;
+
+}
+.team-member {
+    display: flex;
+    flex-direction: column; /* Stacks the image, name, and role vertically */
+    align-items: center; /* Centers the content (image, name, role) horizontally within the team-member div */
+    text-align: center; /* Centers the text within each team-member div */
+}
+
+.team-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.team img {
+    border-radius: 10px;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
-    .header .header-flex {
+    .header .header-flex,
+    .footer .footer-flex,
+    .services .services-flex,
+    .team .team-flex {
         flex-direction: column;
         gap: 1.5rem;
     }
@@ -149,11 +235,15 @@ img {
         flex: 1 1 calc(50% - 1.5rem);
         max-width: calc(50% - 1.5rem);
     }
+
+    .footer .footer-flex {
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
     .gallery-item {
-        flex: 1 1 100%; 
+        flex: 1 1 100%;
         max-width: 100%;
     }
 }
