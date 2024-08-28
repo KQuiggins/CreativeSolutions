@@ -37,6 +37,7 @@ img {
 /* Utility Classes */
 .text-primary {
     background-color: var(--primary-color);
+
 }
 
 .section-heading {
@@ -44,6 +45,25 @@ img {
     margin-bottom: 2rem;
     text-align: center;
 }
+
+.bg-dark {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+.bg-dark .text-primary {
+    padding: 0 0.5rem;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
 
 /* Container */
 .container {
@@ -174,8 +194,6 @@ img {
 
 /* Services */
 .services {
-    background: #333;
-    color:#fff;
     padding: 3rem;
 }
 
