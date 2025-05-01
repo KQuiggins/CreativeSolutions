@@ -299,6 +299,30 @@ img {
         gap: 1.5rem;
     }
 
+    .header .logo {
+        display: none; /* Hide the logo on smaller screens */
+    }
+
+    .header .header-flex {
+        justify-content: center; /* Center the nav when logo is hidden */
+    }
+
+    .header .main-menu {
+        flex-direction: column; /* Stack the menu items vertically */
+        align-items: center; /* Center the menu items */
+        gap: 0.5rem; /* Reduce gap for vertical layout */
+    }
+
+    .header .main-menu li {
+        width: 100%; /* Make list items take full width */
+        text-align: center; /* Center text within list items */
+    }
+
+    .header .main-menu a {
+         display: block; /* Make links block-level for full-width clicking */
+         width: 100%; /* Ensure link takes full width */
+    }
+
     .hero {
         height: 300px;
     }
