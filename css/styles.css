@@ -234,9 +234,9 @@ img {
 }
 .team-member {
     display: flex;
-    flex-direction: column; /* Stacks the image, name, and role vertically */
-    align-items: center; /* Centers the content (image, name, role) horizontally within the team-member div */
-    text-align: center; /* Centers the text within each team-member div */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .team-flex {
@@ -300,27 +300,27 @@ img {
     }
 
     .header .logo {
-        display: none; /* Hide the logo on smaller screens */
+        display: none;
     }
 
     .header .header-flex {
-        justify-content: center; /* Center the nav when logo is hidden */
+        justify-content: center;
     }
 
     .header .main-menu {
-        flex-direction: column; /* Stack the menu items vertically */
-        align-items: center; /* Center the menu items */
-        gap: 0.5rem; /* Reduce gap for vertical layout */
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
     }
 
     .header .main-menu li {
-        width: 100%; /* Make list items take full width */
-        text-align: center; /* Center text within list items */
+        width: 100%;
+        text-align: center;
     }
 
     .header .main-menu a {
-         display: block; /* Make links block-level for full-width clicking */
-         width: 100%; /* Ensure link takes full width */
+         display: block;
+         width: 100%; 
     }
 
     .hero {
