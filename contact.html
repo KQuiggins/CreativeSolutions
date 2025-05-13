@@ -21,10 +21,12 @@
     <body>
         <header class="header">
             <div class="container header-flex">
-                <img src="images/logo.png" class="logo" alt="creative solutions logo">
+                <div class="logo-text">CS</div>
                 <nav>
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                    <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
                     <ul class="main-menu">
-                        <li><a  href="/">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a class="current" href="contact.html">Contact</a></li>
                     </ul>
@@ -43,37 +45,43 @@
 
         <section class="contact">
             <div class="container container-sm">
-                <h2 class="section-heading">Contact Us<h2/>
-                <p>Reach out to us for collaboration, inquiries, or to learn more about how our AI-powered art solutions can elevate your next project.</p>
+                <h2 class="section-heading">Contact Us
+                    <h2 />
+                    <p>Reach out to us for collaboration, inquiries, or to learn more about how our
+                        AI-powered art solutions can elevate your next project.</p>
 
-                <form action="" name="contact" netlify>
-                    <div class="form-group">
-                        <label for="first-name" class="visually-hidden">First Name</label>
-                        <input type="text" id="first-name" name="first-name" placeholder="Enter First Name"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="last-name" class="visually-hidden">First Name</label>
-                        <input type="text" id="last-name" name="last-name" placeholder="Enter Last Name"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="visually-hidden">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="Email Address"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="message" class="visually-hidden">Message</label>
-                        <textarea id="message" name="message" placeholder="Enter Message"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </div>
-                </form>
+                    <form action="" name="contact" netlify>
+                        <div class="form-group">
+                            <label for="first-name" class="visually-hidden">First Name</label>
+                            <input type="text" id="first-name" name="first-name"
+                                placeholder="Enter First Name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name" class="visually-hidden">First Name</label>
+                            <input type="text" id="last-name" name="last-name"
+                                placeholder="Enter Last Name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="visually-hidden">Email Address</label>
+                            <input type="email" id="email" name="email"
+                                placeholder="Email Address" />
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="visually-hidden">Message</label>
+                            <textarea id="message" name="message"
+                                placeholder="Enter Message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                    </form>
             </div>
         </section>
 
 
         <footer class="footer">
             <div class="container footer-flex">
-                <img src="images/logo.png" alt="Creative Solutions logo">
+                <div class="logo-text">CS</div>
 
 
                 <div>

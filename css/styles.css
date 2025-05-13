@@ -84,6 +84,24 @@ img {
     width: 1px;
   }
 
+/* Hamburger menu */
+/* Hamburger menu - hidden by default on large screens */
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+/* Media query updates for the hamburger menu */
+@media (max-width: 768px) {
+
+}
+
 /* Container */
 .container {
     max-width: var(--container-normal);
@@ -289,6 +307,30 @@ img {
     width: 100%;
 }
 
+/* Logo styles */
+.logo-text {
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.header .logo-text {
+    margin-left: 1.5rem;
+  }
+
+/* Also update the footer logo */
+.footer .logo-text {
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     .header .header-flex,
@@ -297,6 +339,40 @@ img {
     .team .team-flex {
         flex-direction: column;
         gap: 1.5rem;
+    }
+
+    .header .logo-text {
+        display: block;
+        margin: 0 0 1rem 1.5rem;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+
+    .menu-toggle {
+        position: absolute;
+        opacity: 0;
+    }
+
+    .header .main-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 1rem;
+    }
+
+    .menu-toggle:checked ~ .main-menu {
+        display: flex;
+    }
+
+    .header .header-flex {
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .header .logo {
@@ -320,7 +396,7 @@ img {
 
     .header .main-menu a {
          display: block;
-         width: 100%; 
+         width: 100%;
     }
 
     .hero {
